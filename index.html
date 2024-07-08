@@ -3,9 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-list JS</title>
+  <title>Add Your Task To-Do Work</title>
 </head>
 <link rel="stylesheet" href="index.css">
+<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+<style>
+  @media(min-width:0px) and (max-width:390px){
+.container{
+  width: 90%;
+  min-height: 100vh;
+  background:linear-gradient(135deg,#2254b7,#020102);
+  padding: 5px;
+  top: 10%;
+}
+.todo-app{
+  width: 100%;
+  max-width: 540px;
+  background:#fff;
+  margin:100px auto 20px;
+  padding: 20px 40px 120px;
+  border-radius: 10px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:#edeef0;
+  border-radius: 30px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+input{
+  flex: 1;
+  border:none;
+  outline: none;
+  background:transparent;
+  padding: 20px;
+  font-weight: 21px;
+}
+button{
+  border: none;
+  outline: none;
+  padding: 6px 28px 10px;
+  background:black;
+  color: #fff;
+  font-size: 19px;
+  cursor: pointer;
+  border-radius: 40px;
+  height: 45px;
+}
+
+  }
+</style>
 <body>
   
 
@@ -13,7 +63,7 @@
   <div class="todo-app">
     <h2>To-Do List <img src="./images/icon.png" alt=""></h2>
     <div class="row">
-      <input type="text" name="text" id="input-box" placeholder="Add your text">
+      <input type="text" name="text" id="input-box" placeholder="Add Your Task Here...">
       <button onclick="addTask()">Add</button>
     </div> 
       <ul id="list-container">
