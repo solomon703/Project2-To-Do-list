@@ -13,14 +13,14 @@
   width: 100%;
   min-height: 100vh;
   background:linear-gradient(135deg,#2254b7,#020102);
-  padding: 5px;
+  padding: 3px;
   top: 10%;
 }
 .todo-app{
   width: 100%;
   max-width: 540px;
-  background:#fff;
-  margin:100px auto 20px;
+  background:whitesmoke;
+  margin:100px auto 30px;
   padding: 20px 40px 120px;
   border-radius: 10px;
 }
@@ -53,7 +53,61 @@ button{
   border-radius: 40px;
   height: 45px;
 }
-
+ul li{
+  list-style: none;
+  font-size: 15px;
+  padding: 12px 10px 12px 50px;
+  -webkit-user-select: none;
+  cursor: pointer;
+  position: relative;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  margin-top: 5px;
+  top: 1px;
+}
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover{
+  background:black;
+}
+#last{
+  color: white;
+  padding: 10px auto 10px;
+  top: 10%;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; */
+  margin-top: 20px;
+  margin-left: 0px;
+}
+#last h2{
+  margin-left: 20%;
+  text-decoration: underline solid white;
+  color:yellow;
+}
+#last p{
+  margin-top: 10px;
+}
+#last b{
+  background-color: none;
+  margin-left: 0px;
+}
+  }
+  @media(min-width:390px){
+    #last{
+      display: none;
+    }
   }
 </style>
 <body>
@@ -69,7 +123,14 @@ button{
       <ul id="list-container">
         
       </ul> 
-  </div>
+    </div>
+    <div id="last">
+      <h2 >This are your Tasks</h2>
+      <p>&#5859 Here you can add and delete your works.</p>
+      <p>&#5859 It will Auto Save Your Data.</p>
+      <!-- <p>&#5859 You may leave and come after some time The data will be same.</p> -->
+      <p>&copy; 2024-2025 &trade; Developments.</p>
+    </div>
 </div>
 
   <script src="index.js"></script>
